@@ -18,14 +18,14 @@ export default class App extends Component{
       return(
         <View style={styles.container}> 
             <StatusBar barStyle="light-content"/>
-            <View style={styles.centerPosition}>
+                <View style={styles.centerPosition}>
             <KeyboardAvoidingView behavior="padding">
-            <View style={styles.marginBottom20}>
-                <Title/>
-            </View>
-            <View>
-                <LoginForm/>
-            </View>
+                <View style={styles.marginBottom20}>
+                    <Title/>
+                </View>
+                <View>
+                    <LoginForm/>
+                </View>
             </KeyboardAvoidingView>
             </View>              
         </View>
