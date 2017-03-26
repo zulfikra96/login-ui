@@ -15,7 +15,7 @@ export default class LoginForm extends Component{
         super();
 
         this.state = {
-            hello : 'zulfikra'
+            passwordInput:''
         }
     }
 
@@ -33,6 +33,11 @@ export default class LoginForm extends Component{
                     underlineColorAndroid="transparent"
                     placeholder="username"
                     placeholderTextColor="#ddd"
+                    returnKeyType="next"
+                    onSubmitEditing={() => this.passwordInput.focus()}
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                    autoCorrect={false}
                 />
                  <TextInput
                     style={styles.editTextInput}
@@ -40,6 +45,8 @@ export default class LoginForm extends Component{
                     placeholder="password"
                     placeholderTextColor="#ddd"
                     secureTextEntry={true}
+                    returnKeyType="go"
+                    ref={(input) => this.passwordInput = input}
                 />
                 <TouchableHighlight style={styles.button}
                     onPress={() => this.sayit()}

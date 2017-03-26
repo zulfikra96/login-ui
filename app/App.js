@@ -5,7 +5,8 @@ import {
   Text,
   StyleSheet,
   Image,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
+  StatusBar
 } from 'react-native';
 
 import Title from './components/Title';
@@ -16,6 +17,7 @@ export default class App extends Component{
     render(){
       return(
         <View style={styles.container}> 
+            <StatusBar barStyle="light-content"/>
             <View style={styles.centerPosition}>
             <KeyboardAvoidingView behavior="padding">
             <View style={styles.marginBottom20}>
