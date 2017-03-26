@@ -4,7 +4,7 @@ import {
   AppRegistry,
   Text,
   StyleSheet,
-  Image
+  Image,
 } from 'react-native';
 
 export default class Title extends Component{

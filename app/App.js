@@ -4,7 +4,8 @@ import {
   AppRegistry,
   Text,
   StyleSheet,
-  Image
+  Image,
+  KeyboardAvoidingView
 } from 'react-native';
 
 import Title from './components/Title';
@@ -16,12 +17,14 @@ export default class App extends Component{
       return(
         <View style={styles.container}> 
             <View style={styles.centerPosition}>
+            <KeyboardAvoidingView behavior="padding">
             <View style={styles.marginBottom20}>
                 <Title/>
             </View>
             <View>
                 <LoginForm/>
             </View>
+            </KeyboardAvoidingView>
             </View>              
         </View>
       );
